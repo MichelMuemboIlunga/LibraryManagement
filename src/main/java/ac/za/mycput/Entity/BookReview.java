@@ -1,8 +1,14 @@
+/*
+ * Entity for the BookReviewFactory
+ * Author: Muembo Ilunga Michel (218303335)
+ * Date: 10 April 2022
+ */
+
 package ac.za.mycput.Entity;
 
 public class BookReview {
     private int id;
-    private String bookId;
+    private int bookId;
     private String content;
     private String date;
 
@@ -22,11 +28,11 @@ public class BookReview {
         this.id = id;
     }
 
-    public String getBookId() {
+    public int getBookId() {
         return bookId;
     }
 
-    public void setBookId(String bookId) {
+    public void setBookId(int bookId) {
         this.bookId = bookId;
     }
 
@@ -48,7 +54,7 @@ public class BookReview {
 
     @Override
     public String toString() {
-        return "BookReview{" +
+        return "BookReviewFactory{" +
                 "id=" + id +
                 ", bookId='" + bookId + '\'' +
                 ", content='" + content + '\'' +
@@ -59,7 +65,7 @@ public class BookReview {
 
     public static class Builder {
         private int id;
-        private String bookId;
+        private int bookId;
         private String content;
         private String date;
 
@@ -69,7 +75,7 @@ public class BookReview {
             return this;
         }
 
-        public Builder setBookId(String bookId) {
+        public Builder setBookId(int bookId) {
             this.bookId = bookId;
             return this;
         }
