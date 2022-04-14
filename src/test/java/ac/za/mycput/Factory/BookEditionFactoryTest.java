@@ -1,8 +1,7 @@
 package ac.za.mycput.Factory;
 
-
 /*
- * Project
+ * Project Term 1
  * Author: Honest Mpungu
  * Student number 215072081
  * Date: 10 April 2022
