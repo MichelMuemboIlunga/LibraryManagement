@@ -12,7 +12,9 @@ import ac.za.mycput.Entity.BookEdition;
 public class BookEditionFactory {
 
 
-    public static BookEdition createBookPublisher(String bookId, String isbn, String yearRelease) {
-        return new BookEdition.Builder().setBookId(bookId).setIsbn(isbn).setYearRelease(yearRelease).build();
+    public static BookEdition createBookEdition(String bookId, String isbn, String yearRelease) {
+        return new BookEdition.Builder().setBookId(bookId).setIsbn(isbn).build();
     }
 }
+
+

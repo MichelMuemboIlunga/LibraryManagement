@@ -17,9 +17,11 @@ class BookEditionFactoryTest {
 
         @Test
         void createBookEdition() {
-            BookEdition bookEdition = BookEditionFactory.createBookEdition(1,10,"Application","Development 3");
+            BookEdition bookEdition = BookEditionFactory.createBookEdition("1","10","1995");
             System.out.println(bookEdition.toString());
             assertNotNull(bookEdition);
         }
-    }
+}
+
+
 

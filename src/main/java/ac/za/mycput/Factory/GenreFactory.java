@@ -11,7 +11,7 @@ import ac.za.mycput.Entity.Genre;
 
 public class GenreFactory {
     public static Genre create(int genreId, String type, String description) {
-        return new Genre.Builder().setGenreId(genreId).setType(type).setDescription(description).build();
+        return new Genre.Builder().setGenreId(genreId).setType(type).build();
     }
 }
 
